@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+nav{
+background-color:  #02918c;
+
+}
+.firststep{
+
+    width: 1170px;
+    margin: auto;}
+nav .firststep{ display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+   /*firstblog*/
+.firstblog{
+    width: 10%;
+}
+.secondblog{
+    width: 90%;
+}
+
+
+
+
+
+
+
+/*menustyle_secondblog*/
+
+.secondblog ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+a{
+    text-decoration: none;
+}
+
+
+ul li a{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 12px;
+    display: inline-block;
+    padding: 26px 25px;
+    transition: .7s;
+}
+ul li:hover a{
+    background-color: rgb(99, 104, 94);
+}
+/*imagebottomspaceremove*/
+.firstblog img{
+    display: block;
+}
+
+
+/*banner-start*/
+
+#banner{
+    background-image: url(../image/mywork.jpg);
+    height: 730px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+#banner::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    opacity: .6;
+    z-index: -1;
+
+}
+
+
+#banner .firststep{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#banner .bannercontent img{
+    margin: auto;
+    display: block;
+    margin: 50px auto;
+}
+
+#banner .bannercontent a{
+    padding: 21px 42px;
+    background-color: #cfc91d;
+}
+  #banner .bannercontent h3{
+font-weight: 400;
+font-size: 30px;
+color: white;
+
+}
+  #banner .bannercontent h1{
+    font-size: 68px;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 30px;
+text-transform: uppercase;}
+
+  #banner .bannercontent p{
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+  }
+
